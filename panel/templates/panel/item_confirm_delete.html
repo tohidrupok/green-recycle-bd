@@ -1,0 +1,17 @@
+{% extends 'panel/base_panel.html' %}
+{% block title %}Delete {{ label }} - BRTL Panel{% endblock %}
+
+{% block content %}
+<div class="topbar">
+    <h1>Delete {{ label }}</h1>
+</div>
+
+<div class="card" style="max-width:600px;">
+    <p>Are you sure you want to delete "<strong>{{ object }}</strong>"? This cannot be undone.</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+        <a href="{% url 'panel_item_list' model_name=model_name %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

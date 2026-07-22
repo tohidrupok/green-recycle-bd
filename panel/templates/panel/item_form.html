@@ -1,0 +1,17 @@
+{% extends 'panel/base_panel.html' %}
+{% block title %}{{ action }} {{ label }} - BRTL Panel{% endblock %}
+
+{% block content %}
+<div class="topbar">
+    <h1>{{ action }} {{ label }}</h1>
+    <a href="{% url 'panel_item_list' model_name=model_name %}" class="btn btn-secondary">Back to list</a>
+</div>
+
+<div class="card" style="max-width:700px;">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Save</button>
+    </form>
+</div>
+{% endblock %}
