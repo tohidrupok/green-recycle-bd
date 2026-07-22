@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-dw(ji0p1=w!9qo7sfljfqtn(lmub#83xlo0wg-u8o2cd^6%m*q
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = ['.onrender.com']
+# ALLOWED_HOSTS = ['.onrender.com']
 
 
 # Application definition
@@ -141,11 +141,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STORAGES = {
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
-    },
-}
+# STORAGES = {
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+#     },
+# }
 
 
 LOGIN_URL = "/panel/login/"

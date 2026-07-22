@@ -168,32 +168,19 @@
                                     </li> 
                                     <li class="dropdown"><a href="{% url 'home' %}">Pages</a>
                                         <ul>
-                                            <li class="dropdown"><a href="{% url 'home' %}">Team</a>
-                                                <ul>
-                                                    <li><a href="team.html">Team Page</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                </ul>
-                                            </li>
                                             <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'home' %}">Team</a></li>
                                             <li><a href="testimonial.html">Testimonials</a></li>
                                             <li><a href="pricing.html">Pricing Table</a></li>
                                             <li><a href="faq.html">Faq's</a></li>
-                                            <li><a href="error.html">Error Page</a></li>
+                                            
                                         </ul>
                                     </li> 
-                                    <li class="dropdown"><a href="index.html">Projects</a>
-                                        <ul>
-                                            <li><a href="project.html">Project 1</a></li>
-                                            <li><a href="project-2.html">Project 2</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                        </ul>
+                                    <li class="dropdown"><a href="{% url 'home' %}">Projects</a>
+                                        
                                     </li>
                                     <li class="dropdown"><a href="{% url 'blog' %}">Blog</a>
-                                        <ul>
-                                            <li><a href="{% url 'blog' %}">Blog Grid</a></li>
-                                            <li><a href="blog-2.html">Blog Classic</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
+                                        
                                     </li>  
                                     <li><a href="{% url 'contact' %}">Contact</a></li> 
                                 </ul>
